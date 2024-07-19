@@ -7,12 +7,15 @@ year = datetime.now().year
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def home():
     quote_response = requests.get("https://zenquotes.io/api/random")
-    qoute_data = quote_response.json()
+    quote_data = quote_response.json()
     
-    return render_template("index.html")
+    author = quote_data[0]["a"]
+    quote = quote_data[0]["q"]
+    
+    return render_template("index.html", copyright_year = year, quote = quote, author = author)
 
 
 if __name__ == '__main__':

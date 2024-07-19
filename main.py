@@ -3,6 +3,8 @@ from flask_bootstrap import Bootstrap5
 import requests
 from datetime import datetime
 
+year = datetime.now().year
+
 app = Flask(__name__)
 
 @app.route("/")

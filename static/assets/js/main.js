@@ -384,6 +384,30 @@
 					});
 
 			}
+		
+		// Background Image loaded from Unsplash
+	// 		fetch("https://api.unsplash.com/photos/random?query=landscape&orientation=landscape&client_id=yoCp49kCclncxM9IVYn64b1DU9Ln_VdmAefNfJTR-G4")
+    // .then(
+    //     function(response){
+            
+            
+    //         if(response.status !== 200){
+    //             console.log("There was a problem. Status code: " + response.status);
+    //             return;
+    //         }
+
+    //         response.json().then(
+    //             function(data){
+    //                 document.getElementById("bg").style.background = 'url(' + data["urls"]["full"]+')';
+    //             }
+    //         )
+    //     }
+    // )
+    // .catch(
+    //     function(err){
+    //         console.log(err+'404');
+    //     }
+    //     )
 
 		// Initialize.
 
